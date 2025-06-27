@@ -44,6 +44,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: listing AFTER
         run: ls -lR
+      - name: Running Fajne Echo
+        run: |
+          chmod 777 .github/workflows/fajne_echo.sh
+          .github/workflows/fajne_echo.sh
 
 
       # Runs a single command using the runners shell
